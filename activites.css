@@ -1,0 +1,46 @@
+.activites {
+    background: url(../image/boxe/fond.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.activites::before {
+    content: "";
+    background-color: rgba(12, 11, 10, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.activites .section-title h2 {
+    color: #fff;
+}
+.activites .container {
+    position: relative;
+}
+@media (min-width: 1024px) {
+    .activites {
+        background-attachment: fixed;
+    }
+}
+.activites .events-carousel {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+}
+.activites .event-item {
+    color: #fff;
+}
+.activites .event-item h3 {
+    font-weight: 600;
+    font-size: 26px;
+    color: #fffc3b;
+}
+.activites .event-item .price {
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.activites .event-item .price span {
+    border-bottom: 2px solid #ffb03b;
+}

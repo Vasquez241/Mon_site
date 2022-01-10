@@ -1,0 +1,101 @@
+.membres {
+    background: url("../image/boxe/fond.jpg") center center no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    position: relative;
+}
+.membres::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9;
+}
+.membres .container {
+    position: relative;
+    z-index: 10;
+}
+.membres .row h1, h2{
+    color: yellow;
+    text-align: center;
+    font-family: SansSerif;
+}
+.membres .row h1{
+    padding: 3rem 0 0 5.5rem;
+    font-size: 30px;
+}
+.membres .member {
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+}
+.membres .member .pic {
+    overflow: hidden;
+}
+.membres .member .member-info {
+    position: absolute;
+    bottom: -80px;
+    left: 20px;
+    right: 20px;
+    background: #ffffff;
+    padding: 20px 0;
+    color: #433f39;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+.membres .member h4 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: yellowgreen;
+    position: relative;
+    padding-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+}
+.membres .member h4::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: yellow;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+.membres .member span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+}
+@media (max-width: 992px) {
+    .membres .member {
+        margin-bottom: 110px;
+    }
+}
+@media (min-width: 1024px) {
+    .membres {
+        background-attachment: fixed;
+    }
+}
+
+.table {
+    width: 100%;
+    background-color: #fefefe;
+    border-collapse: collapse;
+}
+
+
+.table th,
+.table td {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.table thead th,
+.table tfoot th {
+    background-color: #ccc;
+}
